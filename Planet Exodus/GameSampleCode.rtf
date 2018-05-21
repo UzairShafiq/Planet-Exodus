@@ -1,0 +1,74 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf830
+{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;\f1\fnil\fcharset0 Menlo-Italic;\f2\fnil\fcharset0 Menlo-BoldItalic;
+\f3\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;\red246\green5\blue95;\red29\green30\blue26;\red246\green246\blue237;
+\red150\green227\blue11;\red83\green209\blue237;\red98\green95\blue75;\red88\green209\blue235;\red244\green0\blue89;
+\red224\green215\blue91;\red147\green101\blue255;\red255\green252\blue254;\red157\green96\blue255;\red246\green5\blue95;
+\red29\green30\blue26;\red246\green246\blue237;\red244\green0\blue89;\red147\green101\blue255;\red224\green215\blue91;
+\red83\green209\blue237;\red255\green252\blue254;\red255\green39\blue18;\red150\green227\blue11;\red157\green96\blue255;
+}
+{\*\expandedcolortbl;;\csgenericrgb\c96471\c1961\c37255;\csgenericrgb\c11373\c11765\c10196;\csgenericrgb\c96471\c96471\c92941;
+\csgenericrgb\c58824\c89020\c4314;\csgenericrgb\c32549\c81961\c92941;\csgenericrgb\c38431\c37255\c29412;\csgenericrgb\c34510\c81961\c92157;\csgenericrgb\c95686\c0\c34902;
+\csgenericrgb\c87843\c84314\c35686;\csgenericrgb\c57647\c39608\c100000;\csgenericrgb\c100000\c98824\c99608;\csgenericrgb\c61569\c37647\c100000;\csgenericrgb\c96471\c1961\c37255;
+\csgenericrgb\c11373\c11765\c10196;\csgenericrgb\c96471\c96471\c92941;\csgenericrgb\c95686\c0\c34902;\csgenericrgb\c57647\c39608\c100000;\csgenericrgb\c87843\c84314\c35686;
+\csgenericrgb\c32549\c81961\c92941;\csgenericrgb\c100000\c98824\c99608;\csgenericrgb\c100000\c15294\c7059;\csgenericrgb\c58824\c89020\c4314;\csgenericrgb\c61569\c37647\c100000;
+}
+\margl1440\margr1440\vieww25400\viewh11640\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf2 \cb3 package \cf4 com.uzairshafiq.planetexodus;\uc0\u8232 \u8232 \cf2 import \cf5 com.badlogic.gdx.ApplicationAdapter\cf4 ;\uc0\u8232 \cf2 import \cf6 com.badlogic.gdx.Gdx\cf4 ;\uc0\u8232 \cf2 import \cf5 com.badlogic.gdx.graphics.GL20\cf4 ;\uc0\u8232 \cf2 import \cf6 com.badlogic.gdx.graphics.Texture\cf4 ;\uc0\u8232 \cf2 import \cf6 com.badlogic.gdx.graphics.g2d.SpriteBatch\cf4 ;\uc0\u8232 \u8232 \cf2 public class \cf6 MyGdxGame \cf2 extends \cf5 ApplicationAdapter \cf4 \{\uc0\u8232 	\cf6 SpriteBatch \cf4 batch;\uc0\u8232 	\cf6 Texture \cf4 img;\uc0\u8232 	\cf6 Texture \cf4 black; \cf7 // transparent images ARE possible! yay.\uc0\u8232 	\cf2 int \cf4 i;\uc0\u8232 	\u8232 	\cf8 @Override\uc0\u8232 	\cf2 public void \cf5 create \cf4 () \{\uc0\u8232 		batch \cf9 = \cf2 new \cf6 SpriteBatch\cf4 ();\uc0\u8232 		img \cf9 = \cf2 new \cf6 Texture\cf4 (\cf10 "cardtestone.jpg"\cf4 );\uc0\u8232 		black \cf9 = \cf2 new \cf6 Texture\cf4 (\cf10 "transpBlack75.png"\cf4 );\uc0\u8232 		i \cf9 = \cf11 0\cf4 ;\uc0\u8232 	\}\u8232 \u8232 	\cf8 @Override\uc0\u8232 	\cf2 public void \cf5 render \cf4 () \{\uc0\u8232 		i\cf9 ++\cf4 ;\uc0\u8232 		\cf6 Gdx\cf4 .
+\f1\i \cf12 gl
+\f0\i0 \cf4 .\cf6 glClearColor\cf4 (\cf11 1\cf4 , \cf11 0\cf4 , \cf11 0\cf4 , \cf11 1\cf4 );\uc0\u8232 		\cf6 Gdx\cf4 .
+\f1\i \cf12 gl
+\f0\i0 \cf4 .\cf6 glClear\cf4 (\cf5 GL20\cf4 .
+\f2\i\b \cf13 GL_COLOR_BUFFER_BIT
+\f0\i0\b0 \cf4 );\uc0\u8232 \u8232 \u8232 		\cf2 double \cf4 width \cf9 = \cf4 img.getWidth();\uc0\u8232 		\cf6 Gdx\cf4 .
+\f1\i \cf12 app
+\f0\i0 \cf4 .\cf6 log\cf4 (\cf10 "imgWidth"\cf4 , \cf6 Double\cf4 .
+\f1\i toString
+\f0\i0 (width));\uc0\u8232 		\cf2 double \cf4 height \cf9 = \cf4 img.getHeight();\uc0\u8232 		\cf6 Gdx\cf4 .
+\f1\i \cf12 app
+\f0\i0 \cf4 .\cf6 log\cf4 (\cf10 "imgHeight"\cf4 , \cf6 Double\cf4 .
+\f1\i toString
+\f0\i0 (height));\uc0\u8232 \u8232 		\cf2 double \cf4 ratio \cf9 = \cf4 (height\cf9 /\cf4 width); \cf7 // 1.364\uc0\u8232 		\cf6 Gdx\cf4 .
+\f1\i \cf12 app
+\f0\i0 \cf4 .\cf6 log\cf4 (\cf10 "ratio"\cf4 , \cf6 Double\cf4 .
+\f1\i toString
+\f0\i0 (ratio));\uc0\u8232 \u8232 		\cf2 double \cf4 gameWidth \cf9 = \cf6 Gdx\cf4 .
+\f1\i \cf12 app
+\f0\i0 \cf4 .\cf6 getGraphics\cf4 ().\cf6 getWidth\cf4 ();\uc0\u8232 		\cf6 Gdx\cf4 .
+\f1\i \cf12 app
+\f0\i0 \cf4 .\cf6 log\cf4 (\cf10 "gameWidth"\cf4 , \cf6 Double\cf4 .
+\f1\i toString
+\f0\i0 (gameWidth));\uc0\u8232 \u8232 		\cf7 //int gameHeight = Gdx.app.getGraphics().getHeight();\uc0\u8232 \u8232 		\cf2 double \cf4 newGameHeight \cf9 = \cf4 (gameWidth\cf9 *\cf4 ratio);\uc0\u8232 		\cf6 Gdx\cf4 .
+\f1\i \cf12 app
+\f0\i0 \cf4 .\cf6 log\cf4 (\cf10 "newGameHeight"\cf4 , \cf6 Double\cf4 .
+\f1\i toString
+\f0\i0 (newGameHeight));\uc0\u8232 \u8232 \u8232 \u8232 \u8232 		batch.begin();\u8232 		batch.draw(img, \cf9 -\cf11 100\cf4 , \cf9 -\cf11 100\cf4 , (\cf2 int\cf4 )gameWidth\cf9 +\cf11 200\cf4 , (\cf2 int\cf4 )newGameHeight\cf9 +\cf11 200\cf4 );\uc0\u8232 		\cf2 if \cf4 (i \cf9 > \cf11 500\cf4 )\{\uc0\u8232 			batch.draw(black, \cf11 0\cf4 , \cf11 0\cf4 , (\cf2 int\cf4 )gameWidth\cf9 +\cf11 200\cf4 , (\cf2 int\cf4 )newGameHeight\cf9 +\cf11 200\cf4 );\uc0\u8232 		\}\u8232 		batch.end();\u8232 	\}\u8232 	\u8232 	\cf8 @Override\uc0\u8232 	\cf2 public void \cf5 dispose \cf4 () \{\uc0\u8232 		batch.dispose();\u8232 		img.dispose();\u8232 		black.dispose();\u8232 	\}\u8232 \}\
+\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\fs26 \cf14 \cb15 double \cf16 width \cf17 = \cf16 phoneWidth\cf17 *\cf18 1.042\cf16 ;\uc0\u8232 \cf14 double \cf16 height \cf17 = \cf16 phoneHeight\cf17 /\cf18 1.167\cf16 ;\uc0\u8232 \u8232 \cf14 if\cf16 (currentCardNum \cf17 != \cf18 242\cf16 ) \{\uc0\u8232 	\cf14 if \cf16 (currCard.getCardType() \cf17 == \cf19 "swipe"\cf16 ) \{\uc0\u8232 		deltaX \cf17 = \cf16 (\cf20 Gdx\cf16 .
+\f1\i \cf21 input
+\f0\i0 \cf16 .\cf20 getX\cf16 () \cf17 - \cf16 touchX);\uc0\u8232 		\cf14 if \cf16 (touchDown \cf17 == \cf14 true\cf16 ) \{\uc0\u8232 			batch.draw(img, \cf17 -\cf18 25 \cf17 + \cf16 deltaX, \cf17 -\cf18 25\cf16 , (\cf14 int\cf16 )width, (\cf14 int\cf16 )height);\uc0\u8232 		\} \cf14 else \cf16 \{\uc0\u8232 			batch.draw(img, \cf17 -\cf18 25\cf16 , \cf17 -\cf18 25\cf16 , \cf18 1500\cf16 , \cf18 2050\cf16 );\uc0\u8232 		\}\u8232 	\} \cf14 else \cf16 \{\uc0\u8232 		batch.draw(img, \cf17 -\cf18 25\cf16 , \cf17 -\cf18 25\cf16 , \cf18 1500\cf16 , \cf18 2050\cf16 );\uc0\u8232 	\}\u8232 \}\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\fs24 \cf4 \cb3 \
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f3\fs26 \cf0 \cb15 \uc0\u8232 
+\f0 \cb22 batch.begin()\cf16 \cb15 ;\uc0\u8232 \cf20 Gdx\cf16 .
+\f1\i \cf21 gl
+\f0\i0 \cf16 .\cf20 glClearColor\cf16 (\cf18 0\cf16 , \cf18 0\cf16 , \cf18 0\cf16 , \cf18 0\cf16 );\uc0\u8232 \cf20 Gdx\cf16 .
+\f1\i \cf21 gl
+\f0\i0 \cf16 .\cf20 glClear\cf16 (\cf23 \cb15 GL20\cf16 \cb15 .
+\f2\i\b \cf24 \cb15 GL_COLOR_BUFFER_BIT
+\f0\i0\b0 \cf16 \cb15 );\uc0\u8232 \u8232 \cf14 if\cf16 (currentCardNum \cf17 != \cf18 242\cf16 ) \{\uc0\u8232 	\cf14 if \cf16 (currCard.getCardType() \cf17 == \cf19 "swipe"\cf16 ) \{\uc0\u8232 		deltaX \cf17 = \cf16 (\cf20 Gdx\cf16 .
+\f1\i \cf21 input
+\f0\i0 \cf16 .\cf20 getX\cf16 () \cf17 - \cf16 touchX);\uc0\u8232 		\cf14 if \cf16 (touchDown \cf17 == \cf14 true\cf16 ) \{\uc0\u8232 			batch.draw(img, \cf17 -\cf18 25 \cf17 + \cf16 deltaX, \cf17 -\cf18 25\cf16 , \cf18 1500\cf16 , \cf18 2050\cf16 );\uc0\u8232 		\} \cf14 else \cf16 \{\uc0\u8232 			batch.draw(img, \cf17 -\cf18 25\cf16 , \cf17 -\cf18 25\cf16 , \cf18 1500\cf16 , \cf18 2050\cf16 );\uc0\u8232 		\}\u8232 	\} \cf14 else \cf16 \{\uc0\u8232 		batch.draw(img, \cf17 -\cf18 25\cf16 , \cf17 -\cf18 25\cf16 , \cf18 1500\cf16 , \cf18 2050\cf16 );\uc0\u8232 	\}\u8232 \}\u8232 \cf14 else\cf16 \{\uc0\u8232 	batch.draw(img, \cf18 0\cf16 , \cf18 700\cf16 , \cf18 1440\cf16 , \cf18 891\cf16 );\uc0\u8232 \}\u8232 \u8232 \cf14 if\cf16 (enlightened \cf17 == \cf14 true\cf16 ) \{\uc0\u8232 	batch.draw(enlightenedImg, \cf18 25\cf16 , \cf18 2050\cf16 , \cf18 325\cf16 , \cf18 150\cf16 );\uc0\u8232 \}\u8232 \cf14 if\cf16 (hasEaten \cf17 == \cf14 true\cf16 ) \{\uc0\u8232 	batch.draw(foodImg, \cf18 400\cf16 , \cf18 2050\cf16 , \cf18 300\cf16 , \cf18 190\cf16 );\uc0\u8232 \}\u8232 \cf14 if\cf16 (nuke \cf17 == \cf14 true\cf16 ) \{\uc0\u8232 	batch.draw(nukeImg, \cf18 725\cf16 , \cf18 2050\cf16 , \cf18 210\cf16 , \cf18 250\cf16 );\uc0\u8232 \}\u8232 \cf14 if\cf16 (hasPass \cf17 == \cf14 true\cf16 ) \{\uc0\u8232 	batch.draw(passImg, \cf18 950\cf16 , \cf18 2050\cf16 , \cf18 200\cf16 , \cf18 200\cf16 );\uc0\u8232 \}\u8232 \cf14 if \cf16 (roboArm \cf17 == \cf14 true\cf16 ) \{\uc0\u8232 	batch.draw(roboArmImg, \cf18 1200\cf16 , \cf18 2050\cf16 , \cf18 150\cf16 , \cf18 250\cf16 );\uc0\u8232 \}\u8232 \u8232 \cf14 if \cf16 (counter \cf17 == \cf18 100\cf16 )\{\uc0\u8232 	glitchSound.\cf20 play\cf16 (\cf18 1.0f\cf16 );\uc0\u8232 \}\u8232 \u8232 \cf14 if \cf16 (counter \cf17 >= \cf18 115 \cf17 && \cf16 counter \cf17 <= \cf18 170\cf16 )\{\uc0\u8232 	\cf14 int \cf16 startY \cf17 = \cf16 ranNum.nextInt(\cf18 2200\cf16 )\cf17 +\cf18 1\cf16 ;\uc0\u8232 	\cf14 int \cf16 yLen \cf17 = \cf16 ranNum.nextInt(\cf18 500\cf16 )\cf17 +\cf18 1\cf16 ;\uc0\u8232 	\cf14 int \cf16 startX \cf17 = \cf16 ranNum.nextInt(\cf18 1300\cf16 )\cf17 -\cf18 300\cf16 ;\uc0\u8232 	\cf14 int \cf16 xLen \cf17 = \cf16 ranNum.nextInt(\cf18 1000\cf16 )\cf17 +\cf18 500\cf16 ;\uc0\u8232 	batch.draw(glitchImg, startX, startY, xLen, yLen);\u8232 \}\u8232 \u8232 batch.end();\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\fs24 \cf4 \cb3 \
+}
